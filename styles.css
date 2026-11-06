@@ -24,3 +24,9 @@ html{scroll-padding-top:105px}section[id]{scroll-margin-top:105px}
 .idea-note{position:absolute;bottom:0;right:0;font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.2;text-align:right;transform:rotate(-5deg)}
 .absolutely-sub{max-width:680px;line-height:1.7;font-size:19px}
 @media(max-width:750px){.site-header{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}html{scroll-padding-top:83px}section[id]{scroll-margin-top:83px}.idea-art{min-height:240px}.idea-circle{font-size:clamp(22px,5.7vw,35px)}.idea-spark{font-size:40px}.idea-note{font-size:12px}.absolutely-sub{font-size:16px}}
+
+/* Hero copy refresh: allow the longer personal headline to breathe across devices. */
+.hero h1{font-size:clamp(38px,4.5vw,66px);letter-spacing:-.055em;line-height:1.09;max-width:720px;margin-bottom:27px}
+.hero-intro p:first-child{font-weight:400;color:#365448}
+.hero-intro p{font-size:clamp(15px,1.25vw,18px);line-height:1.65;margin-bottom:17px}
+@media(max-width:750px){.hero h1{font-size:clamp(38px,9vw,62px)}.hero-intro p{font-size:16px}}
