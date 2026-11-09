@@ -20,16 +20,25 @@
 <noscript><style>.yes-item{opacity:1;transform:none}</style></noscript><style>
 .hero-portrait { margin: 0; }
 .hero-portrait img { display: block; width: 100%; aspect-ratio: 1; height: auto; object-fit: cover; object-position: center 22%; filter: brightness(1.045); }
+.site-header .wordmark { font-size: clamp(18px, 2.4vw, 27px); white-space: nowrap; }
+.site-header .nav { gap: clamp(12px, 3vw, 40px); }
+@media (max-width: 750px) {
+  .site-header { height: auto; min-height: 94px; flex-wrap: wrap; gap: 0 12px; padding: 8px 16px; }
+  .site-header .nav { order: 1; flex: 0 0 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .site-header .nav a:nth-child(n) { display: block; font-size: 12px; text-align: center; line-height: 1.2; padding: 6px 0; }
+  html { scroll-padding-top: 110px; }
+  section[id] { scroll-margin-top: 0; }
+}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header" id="top">
-<a aria-label="Andrew Hughes, home" class="wordmark" href="#top">ah<span class="orange-dot">.</span></a>
+<a class="wordmark" href="#top">Hey, I’m Andrew<span class="orange-dot">.</span></a>
 <nav aria-label="Main navigation" class="nav">
-<a href="#about">The thinking</a>
-<a href="#stories">The doing</a>
-<a href="#human">The human</a>
+<a href="#about">What Makes Me Tick</a>
+<a href="#stories">A Few Things I’ve Done</a>
+<a href="#human">Beyond the Keyboard</a>
 </nav>
 <a class="header-contact" href="mailto:andrewhhughes@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
 </header>
